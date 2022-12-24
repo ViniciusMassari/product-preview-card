@@ -1,0 +1,128 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: #f3eae3;
+}
+
+img {
+  max-width: 100%;
+}
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  width: 90%;
+  margin: 1rem;
+  border: 1px solid transparent;
+  border-radius: 10px;
+  background-color: #fff;
+  overflow: hidden;
+}
+
+.review {
+  padding: 0 0.675rem;
+  display: flex;
+  flex-direction: column;
+}
+
+h1 {
+  text-transform: uppercase;
+  margin-top: 0.275rem;
+}
+
+.product-type {
+  font: 1.2rem "Noto Nastaliq Urdu", monospace;
+  letter-spacing: 3px;
+  color: #a8a7aa;
+}
+
+.description {
+  margin: 1rem 0;
+  color: #a8a7aa;
+}
+
+.discount-price {
+  color: #447f6b;
+  font-size: 2rem;
+  margin-right: 1rem;
+}
+
+.normal-price {
+  color: #a8a7aa;
+  text-decoration: line-through;
+}
+
+.cart {
+  align-self: center;
+  width: 80%;
+  text-align: center;
+  background-color: #28926d;
+  color: white;
+  margin-top: 0.875rem;
+  margin-bottom: 1rem;
+  padding: 0.675rem;
+  border-radius: 10px;
+}
+.cart p {
+  font-weight: bold;
+}
+
+.cart img {
+  margin-right: 0.675rem;
+}
+
+.cart:hover {
+  background-color: #003d28;
+  cursor: pointer;
+}
+
+@media (min-width: 30rem) {
+  body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 80vh;
+  }
+  .wrapper {
+    flex-direction: row;
+    width: 80%;
+  }
+
+  .product-photo {
+    width: 80%;
+  }
+
+  .product-photo img {
+    height: 100%;
+    max-width: 100%;
+  }
+
+  h1 {
+    font-size: 1.5rem;
+  }
+
+  .discount-price {
+    font-size: 2.3rem;
+    display: inline;
+  }
+}
+
+@media (min-width: 50rem) {
+  .wrapper {
+    width: 40rem;
+  }
+
+  .review {
+    display: flex;
+    justify-content: space-around;
+    width: 70%;
+  }
+}
