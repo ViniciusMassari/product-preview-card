@@ -126,3 +126,16 @@ h1 {
     width: 70%;
   }
 }
+
+@media screen and (orientation: landscape) {
+  .wrapper {
+    margin: 0;
+    height: 100%;
+    margin-top: 1rem;
+  }
+
+  .review {
+    overflow-y: scroll;
+  }
+
+}
